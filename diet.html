@@ -1,0 +1,134 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+
+    <link rel="stylesheet" href="styles.css">
+
+    <title>FLYEfit</title>
+
+
+
+</head>
+
+
+<body>
+
+        <div class="container-later-screens">
+
+            <div class="back-arrow">
+
+                <a href="fitness.html">
+                
+                    <img src="back-arrow.jpg" width="25px" height="25px" alt="Back button">
+
+                </a>
+                
+            </div>
+
+            <div class="logo-small">
+
+                <img src="logo.png" width="60px" height="60px" alt="FLYEfit logo">
+
+            </div>
+
+
+            <div class="progress-bar">
+
+                        <div class="done"></div>
+
+                        <div class="done"></div>
+
+                        <div class="done"></div>
+
+                        <div class="done"></div>
+
+                        <div class="done"></div>
+
+                        <div class="done"></div>
+
+                        <div class="final-done"></div>
+
+            </div>
+
+
+            <div class="message">
+
+                <p>Please select your dietary preferences</p>
+
+            </div>
+            
+
+            <div id="options-container">
+
+                <div class="option active">
+                    <p>
+                        Regular
+                    </p> 
+                </div>
+              
+              
+                <div class="option">
+                    <p>
+                        Vegetarian
+                    </p>
+                </div>
+              
+
+                <div class="option">
+                    <p>
+                        Pescetarian
+                    </p>
+                </div>
+
+
+                <div class="option">
+                    <p>
+                        Dairy Free
+                    </p>
+                </div>
+
+
+                <div class="option">
+                    <p>
+                        Gluten Free
+                    </p>
+                </div>
+
+            </div>
+              
+              <script>
+              // Add active class to the current button (highlight it)
+              var header = document.getElementById("options-container");
+              var options = header.getElementsByClassName("option");
+              for (var i = 0; i < options.length; i++) {
+                options[i].addEventListener("click", function() {
+                var current = document.getElementsByClassName("active");
+                current[0].className = current[0].className.replace(" active", "");
+                this.className += " active";
+                });
+              }
+              </script>
+
+            
+
+
+
+            
+
+            <div class="continue-button">
+
+                <a href="hub.html">
+
+                    <p>CONTINUE</p>
+
+                </a>
+
+            </div>
+
+        </div>   
+
+</body>
+</html>
+

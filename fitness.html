@@ -1,0 +1,125 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+
+    <link rel="stylesheet" href="styles.css">
+
+    <title>FLYEfit</title>
+
+
+
+</head>
+
+
+<body>
+
+        <div class="container-later-screens">
+
+            <div class="back-arrow">
+
+                <a href="weight.html">
+                
+                    <img src="back-arrow.jpg" width="25px" height="25px" alt="Back button">
+
+                </a>
+                
+            </div>
+
+            <div class="logo-small">
+
+                <img src="logo.png" width="60px" height="60px" alt="FLYEfit logo">
+
+            </div>
+
+
+            <div class="progress-bar">
+
+                        <div class="done"></div>
+
+                        <div class="done"></div>
+
+                        <div class="done"></div>
+
+                        <div class="done"></div>
+
+                        <div class="done"></div>
+
+                        <div class="done"></div>
+
+                        <div class="final-remaining"></div>
+
+            </div>
+
+
+            <div class="message">
+
+                <p>Please select your fitness level</p>
+
+            </div>
+            
+
+            <div id="options-container">
+
+                <div class="option active">
+                    <p>
+                        Beginner
+                    </p>
+   
+                </div>
+              
+              
+                <div class="option">
+                    <p>
+                        Intermediate
+                    </p>
+
+                </div>
+              
+
+                <div class="option">
+                    <p>
+                        Advanced
+                    </p>
+
+                </div>
+
+              
+            </div>
+              
+              <script>
+              // Add active class to the current button (highlight it)
+              var header = document.getElementById("options-container");
+              var options = header.getElementsByClassName("option");
+              for (var i = 0; i < options.length; i++) {
+                options[i].addEventListener("click", function() {
+                var current = document.getElementsByClassName("active");
+                current[0].className = current[0].className.replace(" active", "");
+                this.className += " active";
+                });
+              }
+              </script>
+
+            
+
+
+
+            
+
+            <div class="continue-button">
+
+                <a href="diet.html">
+
+                    <p>CONTINUE</p>
+
+                </a>
+
+            </div>
+                            
+        </div>   
+
+
+</body>
+</html>
+

@@ -1,0 +1,121 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+
+    <link rel="stylesheet" href="styles.css">
+
+    <title>FLYEfit</title>
+
+
+
+</head>
+
+
+<body>
+
+        <div class="container-later-screens">
+
+            <div class="back-arrow">
+
+                <a href="your sex.html">
+                
+                    <img src="back-arrow.jpg" width="25px" height="25px" alt="Back button">
+
+                </a>
+                
+            </div>
+
+            <div class="logo-small">
+
+                <img src="logo.png" width="60px" height="60px" alt="FLYEfit logo">
+
+            </div>
+
+
+            <div class="progress-bar">
+
+                        <div class="done"></div>
+
+                        <div class="done"></div>
+
+                        <div class="done"></div>
+
+                        <div class="done"></div>
+
+                        <div class="remaining"></div>
+
+                        <div class="remaining"></div>
+
+                        <div class="final-remaining"></div>
+
+            </div>
+
+
+            <div class="message">
+
+                <p>How tall are you?</p>
+
+            </div>
+            
+
+            <div id="units-container">
+
+                <input type="text" placeholder="" name="height" id="height" required>
+
+
+                <div class="unit">
+                    <p>
+                        Feet / Inches
+                    </p>
+   
+                </div>
+              
+              
+                <div class="unit active">
+                    <p>
+                        Centimetres
+                    </p>
+
+                </div>
+              
+              
+            </div>
+              
+              <script>
+              // Add active class to the current button (highlight it)
+              var header = document.getElementById("units-container");
+              var units = header.getElementsByClassName("unit");
+              for (var i = 0; i < units.length; i++) {
+                units[i].addEventListener("click", function() {
+                var current = document.getElementsByClassName("active");
+                current[0].className = current[0].className.replace(" active", "");
+                this.className += " active";
+                });
+              }
+              </script>
+
+            
+
+
+
+
+
+            <div class="continue-button">
+
+                <a href="weight.html">
+                    
+                    <p>CONTINUE</p>
+                </a>
+
+            </div>
+                            
+
+
+        </div>   
+
+
+</body>
+</html>
+

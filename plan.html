@@ -1,0 +1,144 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+
+    <link rel="stylesheet" href="styles.css">
+
+    <title>FLYEfit</title>
+
+
+
+</head>
+
+
+<body>
+
+        <div class="container-later-screens">
+
+                
+                <div class="back-arrow">
+
+                    <a href="register.html">
+                    
+                        <img src="back-arrow.jpg" width="25px" height="25px" alt="Back button">
+
+                    </a>
+
+                </div>
+
+                <div class="logo-small">
+
+                    <img src="logo.png" width="60px" height="60px" alt="FLYEfit logo">
+
+                </div>
+
+
+
+
+            <div class="progress-bar">
+
+                        <div class="done"></div>
+
+                        <div class="done"></div>
+
+                        <div class="remaining"></div>
+
+                        <div class="remaining"></div>
+
+                        <div class="remaining"></div>
+
+                        <div class="remaining"></div>
+
+                        <div class="final-remaining"></div>
+
+            </div>
+
+
+            <div class="message">
+
+                <p>Welcome to FLYEfit, Karl.</p>
+
+                <p>Please select your plan.</p>
+            </div>
+            
+
+            <div id="billing-container">
+
+                <div class="billing active">
+                  <div class="left">
+                      <h1>
+                          €29
+                      </h1>
+                  </div>
+              
+                  <div class="right">
+              
+                      <h3>monthly</h3>
+              
+                      <p>+ €25 joining fee</p>
+              
+                  </div>
+              
+                </div>
+              
+              
+                <div class="billing">
+                    
+                    <div class="left">
+                        <h1>
+                          €259
+                        </h1>
+              
+                    </div>
+              
+                    <div class="right">
+              
+                        <h3>annually</h3>
+              
+                        <p>+ €25 joining fee</p>
+                    
+                    </div>
+              
+                </div>
+              
+              
+            </div>
+              
+              <script>
+              // Add active class to the current button (highlight it)
+              var header = document.getElementById("billing-container");
+              var billings = header.getElementsByClassName("billing");
+              for (var i = 0; i < billings.length; i++) {
+                billings[i].addEventListener("click", function() {
+                var current = document.getElementsByClassName("active");
+                current[0].className = current[0].className.replace(" active", "");
+                this.className += " active";
+                });
+              }
+              </script>
+
+            
+
+
+<a href="payment.html">
+
+            
+            <div class="continue-button">
+
+
+
+                    <p>CONTINUE</p>
+
+
+
+            </div>
+            
+        </a>
+        </div>   
+
+
+</body>
+</html>
+
